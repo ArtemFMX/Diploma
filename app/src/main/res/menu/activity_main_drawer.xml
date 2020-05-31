@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_goalstoday"
+
+            android:title="@string/nav_purposestoday" />
+        <item
+            android:id="@+id/nav_movedgoals"
+
+            android:title="@string/nav_movedgoals" />
+        <item
+            android:id="@+id/nav_closedgoals"
+
+            android:title="@string/nav_closedpurposes" />
+        <item
+            android:id="@+id/nav_unclosedgoals"
+
+            android:title="@string/nav_unclosedpurposes" />
+        <item
+            android:id="@+id/nav_allgoals"
+
+            android:title="@string/nav_allpurposes" />
+        <item
+            android:id="@+id/nav_effectivness"
+
+            android:title="@string/nav_effectiveness" />
+    </group>
+
+    <item android:title="Поделитесь результатами">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Поделиться" />
+        </menu>
+    </item>
+
+</menu>

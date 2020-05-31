@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ltc.justtargets.AddPurpose">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name"
+                        android:hint="Название цели"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.1">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="82dp"
+                        android:id="@+id/description"
+                        android:hint="Описание"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"></LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Время завершения:"
+                                android:gravity="center|left"
+                                android:textSize="21sp"
+                                android:id="@+id/textView6" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="10:37"
+                                android:textSize="23sp"
+                                android:gravity="center|left"
+                                android:id="@+id/timetoclose" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Уведомления:"
+                                    android:gravity="center|left"
+                                    android:textSize="21sp"
+                                    android:id="@+id/textView8" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5">
+
+                                    <android.support.v7.widget.SwitchCompat
+                                        android:id="@+id/switch_compat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:checked="false"
+                                        android:text=""
+                                        android:textOff=""
+                                        android:textOn=""
+                                        app:showText="true"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="52dp"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="сегодня в "
+                                            android:textSize="19sp"
+                                            android:gravity="center"
+                                            android:id="@+id/textView12" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:text="15:00"
+                                            android:gravity="center"
+                                            android:id="@+id/time1" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5">
+
+                                    <android.support.v7.widget.SwitchCompat
+                                        android:id="@+id/switch_compat2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:checked="false"
+                                        android:text=""
+                                        android:textOff=""
+                                        android:textOn=""
+                                        app:showText="true"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="сегодня в "
+                                            android:textSize="19sp"
+                                            android:gravity="center"
+                                            android:id="@+id/textView13" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:text="16:00"
+                                            android:gravity="center"
+                                            android:id="@+id/time2" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5">
+
+                                    <android.support.v7.widget.SwitchCompat
+                                        android:id="@+id/switch_compat3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:checked="false"
+                                        android:text=""
+                                        android:textOff=""
+                                        android:textOn=""
+                                        app:showText="true"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:textAppearance="?android:attr/textAppearanceMedium"
+                                            android:text="сегодня в "
+                                            android:textSize="19sp"
+                                            android:gravity="center"
+                                            android:id="@+id/textView14" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:textAppearance="?android:attr/textAppearanceLarge"
+                                            android:text="17:00"
+                                            android:gravity="center"
+                                            android:id="@+id/time3" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:text="Приоритет"
+                                    android:id="@+id/textView15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <RatingBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:numStars="5"
+                                        android:stepSize="1"
+                                        android:id="@+id/ratingBar" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3">
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/addpurpose"
+                    android:layout_gravity="bottom|right"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TWE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Добавить задачу</string>
+
+    <!-- Для бокового меню -->
+    <string name="nav_purposestoday">К выполнению</string>
+    <string name="nav_movedgoals">Перенесено</string>
+    <string name="nav_closedpurposes">Выполнено</string>
+    <string name="nav_unclosedpurposes">Невыполнено</string>
+    <string name="nav_allpurposes">Все</string>
+    <string name="nav_effectiveness">Эффективность</string>
+    <string name="nav_share">Есть занятые друзья?</string>
+    <string name="nav_like">Лайк!</string>
+    <string name="nav_support">Тех. поддержка</string>
+    <string name="message_text">Пример текста</string>
+    <string name="yes">Удалить</string>
+    <string name="no">Закрыть окно</string>
+    <string name="maybe">Может быть</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
